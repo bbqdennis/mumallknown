@@ -66,6 +66,12 @@ header {
   font-size: 15px;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .nav-links a {
   text-decoration: none;
   color: var(--text-muted);
@@ -100,6 +106,24 @@ header {
   font-weight: 600;
   box-shadow: 0 10px 22px var(--accent-shadow);
   cursor: pointer;
+}
+
+.lang-toggle {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent-deep);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus {
+  background: var(--accent-soft);
+  outline: none;
 }
 
 .hero {
@@ -498,8 +522,16 @@ footer a {
     display: block;
   }
 
+  .nav-actions {
+    margin-left: auto;
+  }
+
   .nav-action {
     display: none;
+  }
+
+  .lang-toggle {
+    padding: 6px 16px;
   }
 }
 

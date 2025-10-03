@@ -9,16 +9,19 @@
 <body>
   <header>
     <div class="shell nav">
-      <div class="nav-brand">媽咪全知道</div>
+      <div class="nav-brand" data-i18n="nav.brand">媽咪全知道</div>
       <nav class="nav-links" id="navLinks">
-        <a href="#features">核心功能</a>
-        <a href="#planner">週期計畫</a>
-        <a href="#kits">智慧工具</a>
-        <a href="#community">社群</a>
-        <a href="#affiliate">好物推薦</a>
+        <a href="#features" data-i18n="nav.features">核心功能</a>
+        <a href="#planner" data-i18n="nav.planner">週期計畫</a>
+        <a href="#kits" data-i18n="nav.kits">智慧工具</a>
+        <a href="#community" data-i18n="nav.community">社群</a>
+        <a href="#affiliate" data-i18n="nav.affiliate">好物推薦</a>
       </nav>
-      <button class="nav-action" onclick="document.querySelector('#download').scrollIntoView({behavior: 'smooth'})">立即開始</button>
-      <button class="mobile-menu" aria-label="開啟選單">☰</button>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="切換語言" data-i18n="nav.langButton" data-i18n-aria-label="nav.langButtonLabel">中文 / English</button>
+        <button class="nav-action" onclick="document.querySelector('#download').scrollIntoView({behavior: 'smooth'})" data-i18n="nav.cta">立即開始</button>
+      </div>
+      <button class="mobile-menu" aria-label="開啟選單" data-i18n-aria-label="nav.mobileMenuLabel">☰</button>
     </div>
   </header>
 
@@ -26,24 +29,24 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div>
-          <div class="hero-pill">全階段孕產育兒陪伴 · 聯盟營銷一站整合</div>
-          <h1>媽咪全知道，為你把孕期到 36 個月的每一步打理好</h1>
-          <p>集結專業知識、智慧提醒、入院包清單與社群支援，讓準爸媽安心掌握孕產大小事，輕鬆購齊必備好物。</p>
+          <div class="hero-pill" data-i18n="hero.tagline">全階段孕產育兒陪伴 · 聯盟營銷一站整合</div>
+          <h1 data-i18n="hero.title">媽咪全知道，為你把孕期到 36 個月的每一步打理好</h1>
+          <p data-i18n="hero.subtitle">集結專業知識、智慧提醒、入院包清單與社群支援，讓準爸媽安心掌握孕產大小事，輕鬆購齊必備好物。</p>
           <div class="hero-actions">
-            <button class="btn-primary" onclick="document.querySelector('#planner').scrollIntoView({behavior: 'smooth'})">探索我的旅程</button>
-            <button class="btn-ghost" onclick="document.querySelector('#features').scrollIntoView({behavior: 'smooth'})">查看功能亮點</button>
+            <button class="btn-primary" onclick="document.querySelector('#planner').scrollIntoView({behavior: 'smooth'})" data-i18n="hero.primaryCta">探索我的旅程</button>
+            <button class="btn-ghost" onclick="document.querySelector('#features').scrollIntoView({behavior: 'smooth'})" data-i18n="hero.secondaryCta">查看功能亮點</button>
           </div>
         </div>
         <div class="hero-card">
           <div>
-            <span class="hero-pill">智慧提示</span>
-            <h2>今日暖心提醒</h2>
-            <p>懷孕第 20 週 · 胎動變得明顯，可以安排 10 分鐘伸展放鬆骨盆；記得補充足量鈣質。</p>
+            <span class="hero-pill" data-i18n="hero.card.tag">智慧提示</span>
+            <h2 data-i18n="hero.card.title">今日暖心提醒</h2>
+            <p data-i18n="hero.card.description">懷孕第 20 週 · 胎動變得明顯，可以安排 10 分鐘伸展放鬆骨盆；記得補充足量鈣質。</p>
           </div>
           <ul class="hero-list">
-            <li>📅 下次產檢 · 9 月 25 日 · 例行檢查＋妊娠糖尿篩檢</li>
-            <li>🍼 寶寶疫苗 · 9 月 30 日 · 五合一疫苗第 2 劑</li>
-            <li>🛒 今日推薦 · DHA 軟膠囊、孕婦托腹褲、胎教音樂</li>
+            <li data-i18n="hero.card.item1">📅 下次產檢 · 9 月 25 日 · 例行檢查＋妊娠糖尿篩檢</li>
+            <li data-i18n="hero.card.item2">🍼 寶寶疫苗 · 9 月 30 日 · 五合一疫苗第 2 劑</li>
+            <li data-i18n="hero.card.item3">🛒 今日推薦 · DHA 軟膠囊、孕婦托腹褲、胎教音樂</li>
           </ul>
         </div>
       </div>
@@ -52,41 +55,41 @@
     <section class="section" id="features">
       <div class="shell">
         <div class="section-title">
-          <h2>八大核心功能 · 滿足孕產家庭的每個需求</h2>
-          <p>從備孕、孕期、產後到幼兒 36 個月，以情境化工具與內容服務陪伴每一個關鍵時刻。</p>
+          <h2 data-i18n="features.title">八大核心功能 · 滿足孕產家庭的每個需求</h2>
+          <p data-i18n="features.description">從備孕、孕期、產後到幼兒 36 個月，以情境化工具與內容服務陪伴每一個關鍵時刻。</p>
         </div>
         <div class="cards-grid">
           <article class="card">
-            <h3>懷孕準備指南</h3>
-            <p>排卵期計算器、備孕飲食與生活調整清單，一鍵收藏葉酸、排卵試紙等入門好物。</p>
+            <h3 data-i18n="features.card1.title">懷孕準備指南</h3>
+            <p data-i18n="features.card1.text">排卵期計算器、備孕飲食與生活調整清單，一鍵收藏葉酸、排卵試紙等入門好物。</p>
           </article>
           <article class="card">
-            <h3>孕期照護分階段</h3>
-            <p>第一孕期到產前分段顯示營養、運動與產檢提醒，穿插孕婦枕、托腹褲、DHA 推薦。</p>
+            <h3 data-i18n="features.card2.title">孕期照護分階段</h3>
+            <p data-i18n="features.card2.text">第一孕期到產前分段顯示營養、運動與產檢提醒，穿插孕婦枕、托腹褲、DHA 推薦。</p>
           </article>
           <article class="card">
-            <h3>產檢追蹤與提醒</h3>
-            <p>輸入預產期自動生成產檢與檢測時程，支援推播與行事曆整合。</p>
+            <h3 data-i18n="features.card3.title">產檢追蹤與提醒</h3>
+            <p data-i18n="features.card3.text">輸入預產期自動生成產檢與檢測時程，支援推播與行事曆整合。</p>
           </article>
           <article class="card">
-            <h3>入院前準備包</h3>
-            <p>媽媽包、寶寶包清單一次掌握，勾選即可加入購物平台，減少遺漏。</p>
+            <h3 data-i18n="features.card4.title">入院前準備包</h3>
+            <p data-i18n="features.card4.text">媽媽包、寶寶包清單一次掌握，勾選即可加入購物平台，減少遺漏。</p>
           </article>
           <article class="card">
-            <h3>產後恢復照護</h3>
-            <p>產後 1-6 週恢復重點、惡露觀察與情緒照護，延伸月子中心與塑腹帶資源。</p>
+            <h3 data-i18n="features.card5.title">產後恢復照護</h3>
+            <p data-i18n="features.card5.text">產後 1-6 週恢復重點、惡露觀察與情緒照護，延伸月子中心與塑腹帶資源。</p>
           </article>
           <article class="card">
-            <h3>新生兒 0–36 個月照護</h3>
-            <p>依月齡提供作息、飲食、疫苗與發展指標，搭配奶瓶、學步鞋等好物。</p>
+            <h3 data-i18n="features.card6.title">新生兒 0–36 個月照護</h3>
+            <p data-i18n="features.card6.text">依月齡提供作息、飲食、疫苗與發展指標，搭配奶瓶、學步鞋等好物。</p>
           </article>
           <article class="card">
-            <h3>社群與問答</h3>
-            <p>匿名發問、專家回覆、熱門標籤與商品建議，打造安心支持圈。</p>
+            <h3 data-i18n="features.card7.title">社群與問答</h3>
+            <p data-i18n="features.card7.text">匿名發問、專家回覆、熱門標籤與商品建議，打造安心支持圈。</p>
           </article>
           <article class="card">
-            <h3>收藏與清單</h3>
-            <p>知識文章、實用工具、商品一次收藏，分類管理同步提醒。</p>
+            <h3 data-i18n="features.card8.title">收藏與清單</h3>
+            <p data-i18n="features.card8.text">知識文章、實用工具、商品一次收藏，分類管理同步提醒。</p>
           </article>
         </div>
       </div>
@@ -95,109 +98,109 @@
     <section class="section" id="planner">
       <div class="shell">
         <div class="section-title">
-          <h2>依你的旅程，智慧引導每個階段</h2>
-          <p>選擇所在階段，立即掌握重要任務、健康提醒與推薦資源，為每一步做好準備。</p>
-          <div class="stage-switcher" role="tablist" aria-label="孕產階段選單">
-            <button class="stage-button active" role="tab" aria-selected="true" aria-controls="stage-pregnancy" data-target="stage-pregnancy">孕期階段</button>
-            <button class="stage-button" role="tab" aria-selected="false" aria-controls="stage-postpartum" data-target="stage-postpartum">產後恢復</button>
-            <button class="stage-button" role="tab" aria-selected="false" aria-controls="stage-baby" data-target="stage-baby">0–36 個月</button>
+          <h2 data-i18n="planner.title">依你的旅程，智慧引導每個階段</h2>
+          <p data-i18n="planner.description">選擇所在階段，立即掌握重要任務、健康提醒與推薦資源，為每一步做好準備。</p>
+          <div class="stage-switcher" role="tablist" aria-label="孕產階段選單" data-i18n-aria-label="planner.stageSwitcherLabel">
+            <button class="stage-button active" role="tab" aria-selected="true" aria-controls="stage-pregnancy" data-target="stage-pregnancy" data-i18n="planner.tabs.pregnancy">孕期階段</button>
+            <button class="stage-button" role="tab" aria-selected="false" aria-controls="stage-postpartum" data-target="stage-postpartum" data-i18n="planner.tabs.postpartum">產後恢復</button>
+            <button class="stage-button" role="tab" aria-selected="false" aria-controls="stage-baby" data-target="stage-baby" data-i18n="planner.tabs.baby">0–36 個月</button>
           </div>
         </div>
 
         <div class="stage-panels">
           <div class="stage-panel active" id="stage-pregnancy" role="tabpanel">
             <article class="card">
-              <h3>第 1–12 週</h3>
+              <h3 data-i18n="planner.pregnancy.card1.title">第 1–12 週</h3>
               <ul>
-                <li>補充葉酸與 DHA，建立孕吐舒緩飲食。</li>
-                <li>安排初次產檢、確認子宮頸抹片與抽血檢查。</li>
-                <li>推薦：葉酸錠、孕期維他命、孕婦營養湯品。</li>
+                <li data-i18n="planner.pregnancy.card1.item1">補充葉酸與 DHA，建立孕吐舒緩飲食。</li>
+                <li data-i18n="planner.pregnancy.card1.item2">安排初次產檢、確認子宮頸抹片與抽血檢查。</li>
+                <li data-i18n="planner.pregnancy.card1.item3">推薦：葉酸錠、孕期維他命、孕婦營養湯品。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>第 13–27 週</h3>
+              <h3 data-i18n="planner.pregnancy.card2.title">第 13–27 週</h3>
               <ul>
-                <li>加強攝取鈣質與鐵質，建立規律伸展運動。</li>
-                <li>密切留意胎動，安排妊娠糖尿篩檢。</li>
-                <li>推薦：孕婦枕、托腹褲、產前瑜伽課程。</li>
+                <li data-i18n="planner.pregnancy.card2.item1">加強攝取鈣質與鐵質，建立規律伸展運動。</li>
+                <li data-i18n="planner.pregnancy.card2.item2">密切留意胎動，安排妊娠糖尿篩檢。</li>
+                <li data-i18n="planner.pregnancy.card2.item3">推薦：孕婦枕、托腹褲、產前瑜伽課程。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>第 28 週至生產</h3>
+              <h3 data-i18n="planner.pregnancy.card3.title">第 28 週至生產</h3>
               <ul>
-                <li>每週胎動紀錄、追蹤胎位與羊水量。</li>
-                <li>準備待產包、討論生產計畫與陪產安排。</li>
-                <li>推薦：待產包組、溢乳墊、醫院入住用品。</li>
+                <li data-i18n="planner.pregnancy.card3.item1">每週胎動紀錄、追蹤胎位與羊水量。</li>
+                <li data-i18n="planner.pregnancy.card3.item2">準備待產包、討論生產計畫與陪產安排。</li>
+                <li data-i18n="planner.pregnancy.card3.item3">推薦：待產包組、溢乳墊、醫院入住用品。</li>
               </ul>
             </article>
           </div>
 
           <div class="stage-panel" id="stage-postpartum" role="tabpanel">
             <article class="card">
-              <h3>第 1 週</h3>
+              <h3 data-i18n="planner.postpartum.card1.title">第 1 週</h3>
               <ul>
-                <li>惡露顏色觀察、子宮收縮追蹤。</li>
-                <li>協助哺乳諮詢，建立正確姿勢。</li>
-                <li>推薦：月子中心巡房、溫和洗護組。</li>
+                <li data-i18n="planner.postpartum.card1.item1">惡露顏色觀察、子宮收縮追蹤。</li>
+                <li data-i18n="planner.postpartum.card1.item2">協助哺乳諮詢，建立正確姿勢。</li>
+                <li data-i18n="planner.postpartum.card1.item3">推薦：月子中心巡房、溫和洗護組。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>第 2–4 週</h3>
+              <h3 data-i18n="planner.postpartum.card2.title">第 2–4 週</h3>
               <ul>
-                <li>骨盆底肌修復練習、情緒支持諮詢。</li>
-                <li>建立休息與哺乳節奏。</li>
-                <li>推薦：骨盆塑腹帶、調理湯品、心理諮商。</li>
+                <li data-i18n="planner.postpartum.card2.item1">骨盆底肌修復練習、情緒支持諮詢。</li>
+                <li data-i18n="planner.postpartum.card2.item2">建立休息與哺乳節奏。</li>
+                <li data-i18n="planner.postpartum.card2.item3">推薦：骨盆塑腹帶、調理湯品、心理諮商。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>第 5–6 週</h3>
+              <h3 data-i18n="planner.postpartum.card3.title">第 5–6 週</h3>
               <ul>
-                <li>安排產後檢查、收集哺乳與返工規劃。</li>
-                <li>開啟輕量運動，評估泌乳狀況。</li>
-                <li>推薦：產後瑜伽、乳腺按摩、營養補充包。</li>
+                <li data-i18n="planner.postpartum.card3.item1">安排產後檢查、收集哺乳與返工規劃。</li>
+                <li data-i18n="planner.postpartum.card3.item2">開啟輕量運動，評估泌乳狀況。</li>
+                <li data-i18n="planner.postpartum.card3.item3">推薦：產後瑜伽、乳腺按摩、營養補充包。</li>
               </ul>
             </article>
           </div>
 
           <div class="stage-panel" id="stage-baby" role="tabpanel">
             <article class="card">
-              <h3>0–2 個月</h3>
+              <h3 data-i18n="planner.baby.card1.title">0–2 個月</h3>
               <ul>
-                <li>餵奶頻率、睡眠安撫、黃疸觀察。</li>
-                <li>疫苗：出生 BCG、B 型肝炎；滿月聽力篩檢。</li>
-                <li>推薦：奶瓶消毒鍋、新生兒包巾、寶寶床。</li>
+                <li data-i18n="planner.baby.card1.item1">餵奶頻率、睡眠安撫、黃疸觀察。</li>
+                <li data-i18n="planner.baby.card1.item2">疫苗：出生 BCG、B 型肝炎；滿月聽力篩檢。</li>
+                <li data-i18n="planner.baby.card1.item3">推薦：奶瓶消毒鍋、新生兒包巾、寶寶床。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>2–6 個月</h3>
+              <h3 data-i18n="planner.baby.card2.title">2–6 個月</h3>
               <ul>
-                <li>翻身練習、手眼協調互動遊戲。</li>
-                <li>疫苗：五合一、肺炎鏈球菌、輪狀病毒。</li>
-                <li>推薦：健力毯、牙膠玩具、翻身枕。</li>
+                <li data-i18n="planner.baby.card2.item1">翻身練習、手眼協調互動遊戲。</li>
+                <li data-i18n="planner.baby.card2.item2">疫苗：五合一、肺炎鏈球菌、輪狀病毒。</li>
+                <li data-i18n="planner.baby.card2.item3">推薦：健力毯、牙膠玩具、翻身枕。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>6–12 個月</h3>
+              <h3 data-i18n="planner.baby.card3.title">6–12 個月</h3>
               <ul>
-                <li>副食品導入、爬行與站立練習。</li>
-                <li>疫苗：麻疹腮腺炎德國麻疹、B 型肝炎加強。</li>
-                <li>推薦：副食品機、學習餐具、軟質學步鞋。</li>
+                <li data-i18n="planner.baby.card3.item1">副食品導入、爬行與站立練習。</li>
+                <li data-i18n="planner.baby.card3.item2">疫苗：麻疹腮腺炎德國麻疹、B 型肝炎加強。</li>
+                <li data-i18n="planner.baby.card3.item3">推薦：副食品機、學習餐具、軟質學步鞋。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>12–24 個月</h3>
+              <h3 data-i18n="planner.baby.card4.title">12–24 個月</h3>
               <ul>
-                <li>語彙刺激、日夜作息穩定。</li>
-                <li>疫苗：第二劑麻疹腮腺炎德國麻疹、流感季節。</li>
-                <li>推薦：故事繪本、幼兒安全餐椅、親子課程。</li>
+                <li data-i18n="planner.baby.card4.item1">語彙刺激、日夜作息穩定。</li>
+                <li data-i18n="planner.baby.card4.item2">疫苗：第二劑麻疹腮腺炎德國麻疹、流感季節。</li>
+                <li data-i18n="planner.baby.card4.item3">推薦：故事繪本、幼兒安全餐椅、親子課程。</li>
               </ul>
             </article>
             <article class="card">
-              <h3>24–36 個月</h3>
+              <h3 data-i18n="planner.baby.card5.title">24–36 個月</h3>
               <ul>
-                <li>自主如廁練習、情緒表達引導。</li>
-                <li>疫苗：五合一追加、口服小兒麻痺。</li>
-                <li>推薦：情境角色扮演玩具、平衡車、幼兒背包。</li>
+                <li data-i18n="planner.baby.card5.item1">自主如廁練習、情緒表達引導。</li>
+                <li data-i18n="planner.baby.card5.item2">疫苗：五合一追加、口服小兒麻痺。</li>
+                <li data-i18n="planner.baby.card5.item3">推薦：情境角色扮演玩具、平衡車、幼兒背包。</li>
               </ul>
             </article>
           </div>
@@ -208,56 +211,56 @@
     <section class="section" id="kits">
       <div class="shell">
         <div class="section-title">
-          <h2>智慧工具 · 讓任務更輕鬆</h2>
-          <p>整合實用工具與清單模板，協助準備、追蹤與規劃，打造專屬孕產作戰地圖。</p>
+          <h2 data-i18n="kits.title">智慧工具 · 讓任務更輕鬆</h2>
+          <p data-i18n="kits.description">整合實用工具與清單模板，協助準備、追蹤與規劃，打造專屬孕產作戰地圖。</p>
         </div>
         <div class="kits-grid">
           <div class="kit-card">
-            <h3>排卵與預產計算器</h3>
-            <p>輸入月經週期即可推算排卵期與預產期，搭配備孕注意事項與營養建議。</p>
+            <h3 data-i18n="kits.card1.title">排卵與預產計算器</h3>
+            <p data-i18n="kits.card1.text">輸入月經週期即可推算排卵期與預產期，搭配備孕注意事項與營養建議。</p>
             <div class="badge-group">
-              <span class="badge">備孕規劃</span>
-              <span class="badge">行事曆串接</span>
+              <span class="badge" data-i18n="kits.card1.badge1">備孕規劃</span>
+              <span class="badge" data-i18n="kits.card1.badge2">行事曆串接</span>
             </div>
           </div>
           <div class="kit-card">
-            <h3>產檢提醒行事曆</h3>
-            <p>依孕期自動生成產檢、產篩與衛教課程時程，可一鍵加入 Google / Apple 行事曆。</p>
+            <h3 data-i18n="kits.card2.title">產檢提醒行事曆</h3>
+            <p data-i18n="kits.card2.text">依孕期自動生成產檢、產篩與衛教課程時程，可一鍵加入 Google / Apple 行事曆。</p>
             <div class="badge-group">
-              <span class="badge">自動提醒</span>
-              <span class="badge">與伴侶共享</span>
+              <span class="badge" data-i18n="kits.card2.badge1">自動提醒</span>
+              <span class="badge" data-i18n="kits.card2.badge2">與伴侶共享</span>
             </div>
           </div>
           <div class="kit-card">
-            <h3>入院前準備清單</h3>
-            <p>預設媽媽包、寶寶包與文件項目，可客製及勾選完成度，同步購物清單。</p>
+            <h3 data-i18n="kits.card3.title">入院前準備清單</h3>
+            <p data-i18n="kits.card3.text">預設媽媽包、寶寶包與文件項目，可客製及勾選完成度，同步購物清單。</p>
             <div class="badge-group">
-              <span class="badge">快速打包</span>
-              <span class="badge">聯盟串接</span>
+              <span class="badge" data-i18n="kits.card3.badge1">快速打包</span>
+              <span class="badge" data-i18n="kits.card3.badge2">聯盟串接</span>
             </div>
           </div>
           <div class="kit-card">
-            <h3>產後恢復追蹤</h3>
-            <p>記錄惡露顏色、情緒日記與哺乳筆記，系統自動提出專家建議。</p>
+            <h3 data-i18n="kits.card4.title">產後恢復追蹤</h3>
+            <p data-i18n="kits.card4.text">記錄惡露顏色、情緒日記與哺乳筆記，系統自動提出專家建議。</p>
             <div class="badge-group">
-              <span class="badge">恢復日誌</span>
-              <span class="badge">專家問答</span>
+              <span class="badge" data-i18n="kits.card4.badge1">恢復日誌</span>
+              <span class="badge" data-i18n="kits.card4.badge2">專家問答</span>
             </div>
           </div>
           <div class="kit-card">
-            <h3>寶寶成長里程碑</h3>
-            <p>0–36 個月發展指標提示，對應遊戲互動與親子活動建議，一鍵儲存成長相簿。</p>
+            <h3 data-i18n="kits.card5.title">寶寶成長里程碑</h3>
+            <p data-i18n="kits.card5.text">0–36 個月發展指標提示，對應遊戲互動與親子活動建議，一鍵儲存成長相簿。</p>
             <div class="badge-group">
-              <span class="badge">月齡提醒</span>
-              <span class="badge">互動練習</span>
+              <span class="badge" data-i18n="kits.card5.badge1">月齡提醒</span>
+              <span class="badge" data-i18n="kits.card5.badge2">互動練習</span>
             </div>
           </div>
           <div class="kit-card">
-            <h3>收藏清單中心</h3>
-            <p>知識文章、營養食譜、商品等分類收藏，支援備註與結帳提醒。</p>
+            <h3 data-i18n="kits.card6.title">收藏清單中心</h3>
+            <p data-i18n="kits.card6.text">知識文章、營養食譜、商品等分類收藏，支援備註與結帳提醒。</p>
             <div class="badge-group">
-              <span class="badge">跨裝置同步</span>
-              <span class="badge">分享家人</span>
+              <span class="badge" data-i18n="kits.card6.badge1">跨裝置同步</span>
+              <span class="badge" data-i18n="kits.card6.badge2">分享家人</span>
             </div>
           </div>
         </div>
@@ -267,45 +270,45 @@
     <section class="section" id="affiliate">
       <div class="shell">
         <div class="section-title">
-          <h2>精選好物相伴 · 一鍵購買不手忙腳亂</h2>
-          <p>依旅程貼心分組推薦，讓你在閱讀知識時，也能即時下單準備所需用品。</p>
+          <h2 data-i18n="affiliate.title">精選好物相伴 · 一鍵購買不手忙腳亂</h2>
+          <p data-i18n="affiliate.description">依旅程貼心分組推薦，讓你在閱讀知識時，也能即時下單準備所需用品。</p>
         </div>
         <div class="products">
           <div class="product-card">
-            <span>備孕</span>
-            <h3>葉酸營養組</h3>
-            <p>專為備孕與初期孕媽設計的綜合維他命，補足關鍵葉酸與 B 群。</p>
-            <a href="#">查看聯盟連結 →</a>
+            <span data-i18n="affiliate.card1.category">備孕</span>
+            <h3 data-i18n="affiliate.card1.title">葉酸營養組</h3>
+            <p data-i18n="affiliate.card1.text">專為備孕與初期孕媽設計的綜合維他命，補足關鍵葉酸與 B 群。</p>
+            <a href="#" data-i18n="affiliate.card1.link">查看聯盟連結 →</a>
           </div>
           <div class="product-card">
-            <span>孕期舒緩</span>
-            <h3>托腹褲與孕婦枕</h3>
-            <p>釋放腰背壓力，夜間更好眠，減少抽筋與下肢水腫困擾。</p>
-            <a href="#">查看聯盟連結 →</a>
+            <span data-i18n="affiliate.card2.category">孕期舒緩</span>
+            <h3 data-i18n="affiliate.card2.title">托腹褲與孕婦枕</h3>
+            <p data-i18n="affiliate.card2.text">釋放腰背壓力，夜間更好眠，減少抽筋與下肢水腫困擾。</p>
+            <a href="#" data-i18n="affiliate.card2.link">查看聯盟連結 →</a>
           </div>
           <div class="product-card">
-            <span>待產包</span>
-            <h3>媽媽包必備套組</h3>
-            <p>從產褥墊到溢乳垫一次備妥，入院即可安心使用。</p>
-            <a href="#">查看聯盟連結 →</a>
+            <span data-i18n="affiliate.card3.category">待產包</span>
+            <h3 data-i18n="affiliate.card3.title">媽媽包必備套組</h3>
+            <p data-i18n="affiliate.card3.text">從產褥墊到溢乳垫一次備妥，入院即可安心使用。</p>
+            <a href="#" data-i18n="affiliate.card3.link">查看聯盟連結 →</a>
           </div>
           <div class="product-card">
-            <span>寶寶日常</span>
-            <h3>奶瓶清潔與副食品機</h3>
-            <p>輕鬆完成消毒與副食品製作，讓寶寶飲食更安心。</p>
-            <a href="#">查看聯盟連結 →</a>
+            <span data-i18n="affiliate.card4.category">寶寶日常</span>
+            <h3 data-i18n="affiliate.card4.title">奶瓶清潔與副食品機</h3>
+            <p data-i18n="affiliate.card4.text">輕鬆完成消毒與副食品製作，讓寶寶飲食更安心。</p>
+            <a href="#" data-i18n="affiliate.card4.link">查看聯盟連結 →</a>
           </div>
           <div class="product-card">
-            <span>學習成長</span>
-            <h3>學步鞋與平衡車</h3>
-            <p>強化平衡與肌力發展，陪伴寶寶自信探索世界。</p>
-            <a href="#">查看聯盟連結 →</a>
+            <span data-i18n="affiliate.card5.category">學習成長</span>
+            <h3 data-i18n="affiliate.card5.title">學步鞋與平衡車</h3>
+            <p data-i18n="affiliate.card5.text">強化平衡與肌力發展，陪伴寶寶自信探索世界。</p>
+            <a href="#" data-i18n="affiliate.card5.link">查看聯盟連結 →</a>
           </div>
           <div class="product-card">
-            <span>媽媽自我照護</span>
-            <h3>產後塑身與舒壓組</h3>
-            <p>調理體態與情緒放鬆共存，打造健康身心。</p>
-            <a href="#">查看聯盟連結 →</a>
+            <span data-i18n="affiliate.card6.category">媽媽自我照護</span>
+            <h3 data-i18n="affiliate.card6.title">產後塑身與舒壓組</h3>
+            <p data-i18n="affiliate.card6.text">調理體態與情緒放鬆共存，打造健康身心。</p>
+            <a href="#" data-i18n="affiliate.card6.link">查看聯盟連結 →</a>
           </div>
         </div>
       </div>
@@ -315,29 +318,29 @@
       <div class="shell">
         <div class="community">
           <div>
-            <h2>社群與問答，讓你不再孤單</h2>
-            <p>匿名提問、專家直播、暖心互助，一起建立最真實的育兒支持圈。</p>
+            <h2 data-i18n="community.title">社群與問答，讓你不再孤單</h2>
+            <p data-i18n="community.description">匿名提問、專家直播、暖心互助，一起建立最真實的育兒支持圈。</p>
           </div>
           <div class="community-grid">
             <article class="community-card">
-              <strong>#哺乳</strong>
-              <p>「寶寶半夜頻頻醒來怎麼辦？」10 位媽媽分享實測哄睡法，專家線上指導含哺乳姿勢調整。</p>
+              <strong data-i18n="community.card1.tag">#哺乳</strong>
+              <p data-i18n="community.card1.text">「寶寶半夜頻頻醒來怎麼辦？」10 位媽媽分享實測哄睡法，專家線上指導含哺乳姿勢調整。</p>
             </article>
             <article class="community-card">
-              <strong>#疫苗</strong>
-              <p>疫苗時程查詢＋提醒同步推播，專家解析常見副作用與舒緩技巧。</p>
+              <strong data-i18n="community.card2.tag">#疫苗</strong>
+              <p data-i18n="community.card2.text">疫苗時程查詢＋提醒同步推播，專家解析常見副作用與舒緩技巧。</p>
             </article>
             <article class="community-card">
-              <strong>#副食品</strong>
-              <p>提供分階段副食品菜單與營養建議，搭配副食品機折扣分享。</p>
+              <strong data-i18n="community.card3.tag">#副食品</strong>
+              <p data-i18n="community.card3.text">提供分階段副食品菜單與營養建議，搭配副食品機折扣分享。</p>
             </article>
             <article class="community-card">
-              <strong>#情緒支持</strong>
-              <p>產後情緒上線匿名分享，心理師與社群夥伴陪伴你度過轉換期。</p>
+              <strong data-i18n="community.card4.tag">#情緒支持</strong>
+              <p data-i18n="community.card4.text">產後情緒上線匿名分享，心理師與社群夥伴陪伴你度過轉換期。</p>
             </article>
           </div>
           <div class="hero-actions" style="margin-top:8px;">
-            <button class="btn-ghost" onclick="alert('社群功能即將開放，敬請期待！')">預約加入社群</button>
+            <button class="btn-ghost" data-alert-key="community.alert" data-i18n="community.cta">預約加入社群</button>
           </div>
         </div>
       </div>
@@ -346,21 +349,21 @@
     <section class="section" id="delivery">
       <div class="shell">
         <div class="section-title">
-          <h2>專屬收藏，所有靈感一次整理</h2>
-          <p>把常用文章、購物清單、提醒與寶寶成長記錄收進個人中心，跨裝置即時同步。</p>
+          <h2 data-i18n="delivery.title">專屬收藏，所有靈感一次整理</h2>
+          <p data-i18n="delivery.description">把常用文章、購物清單、提醒與寶寶成長記錄收進個人中心，跨裝置即時同步。</p>
         </div>
         <div class="cards-grid">
           <article class="card">
-            <h3>知識庫收藏</h3>
-            <p>文章、影音、專家講堂自動按階段排列，可標註重點段落。</p>
+            <h3 data-i18n="delivery.card1.title">知識庫收藏</h3>
+            <p data-i18n="delivery.card1.text">文章、影音、專家講堂自動按階段排列，可標註重點段落。</p>
           </article>
           <article class="card">
-            <h3>商品追蹤</h3>
-            <p>將感興趣的商品加入購物清單，取得價格提醒與促銷小提示。</p>
+            <h3 data-i18n="delivery.card2.title">商品追蹤</h3>
+            <p data-i18n="delivery.card2.text">將感興趣的商品加入購物清單，取得價格提醒與促銷小提示。</p>
           </article>
           <article class="card">
-            <h3>提醒一覽</h3>
-            <p>產檢、疫苗、活動課程與自訂提醒集中管理，支援分享給家人。</p>
+            <h3 data-i18n="delivery.card3.title">提醒一覽</h3>
+            <p data-i18n="delivery.card3.text">產檢、疫苗、活動課程與自訂提醒集中管理，支援分享給家人。</p>
           </article>
         </div>
       </div>
@@ -369,11 +372,11 @@
     <section class="cta" id="download">
       <div class="shell">
         <div class="cta-box">
-          <h2>準備好啟動你的孕產旅程了嗎？</h2>
-          <p>媽咪全知道整合計畫、內容、提醒與好物，只要加入會員即可快速設定你的專屬顧問。</p>
+          <h2 data-i18n="cta.title">準備好啟動你的孕產旅程了嗎？</h2>
+          <p data-i18n="cta.description">媽咪全知道整合計畫、內容、提醒與好物，只要加入會員即可快速設定你的專屬顧問。</p>
           <div class="hero-actions" style="justify-content:center;">
-            <button class="btn-primary">免費建立帳號</button>
-            <button class="btn-ghost" onclick="document.querySelector('footer').scrollIntoView({behavior: 'smooth'})">聯絡專人</button>
+            <button class="btn-primary" data-i18n="cta.primaryCta">免費建立帳號</button>
+            <button class="btn-ghost" onclick="document.querySelector('footer').scrollIntoView({behavior: 'smooth'})" data-i18n="cta.secondaryCta">聯絡專人</button>
           </div>
         </div>
       </div>
@@ -383,31 +386,31 @@
   <footer>
     <div class="shell footer-grid">
       <div>
-        <h4>媽咪全知道</h4>
-        <p>全方位孕產育兒指南 · 智慧提醒 · 聯盟好物推薦。</p>
+        <h4 data-i18n="footer.brand">媽咪全知道</h4>
+        <p data-i18n="footer.tagline">全方位孕產育兒指南 · 智慧提醒 · 聯盟好物推薦。</p>
       </div>
       <div>
-        <h4>資源</h4>
+        <h4 data-i18n="footer.resources.title">資源</h4>
         <ul>
-          <li><a href="#features">功能導覽</a></li>
-          <li><a href="#planner">階段指南</a></li>
-          <li><a href="#kits">智慧工具</a></li>
+          <li><a href="#features" data-i18n="footer.resources.item1">功能導覽</a></li>
+          <li><a href="#planner" data-i18n="footer.resources.item2">階段指南</a></li>
+          <li><a href="#kits" data-i18n="footer.resources.item3">智慧工具</a></li>
         </ul>
       </div>
       <div>
-        <h4>支援</h4>
+        <h4 data-i18n="footer.support.title">支援</h4>
         <ul>
-          <li><a href="#community">社群 Q&A</a></li>
-          <li><a href="#affiliate">品牌合作</a></li>
-          <li><a href="#download">會員服務</a></li>
+          <li><a href="#community" data-i18n="footer.support.item1">社群 Q&A</a></li>
+          <li><a href="#affiliate" data-i18n="footer.support.item2">品牌合作</a></li>
+          <li><a href="#download" data-i18n="footer.support.item3">會員服務</a></li>
         </ul>
       </div>
       <div>
-        <h4>追蹤我們</h4>
+        <h4 data-i18n="footer.follow.title">追蹤我們</h4>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a href="#" data-i18n="footer.follow.item1">Instagram</a></li>
+          <li><a href="#" data-i18n="footer.follow.item2">Facebook</a></li>
+          <li><a href="#" data-i18n="footer.follow.item3">YouTube</a></li>
         </ul>
       </div>
     </div>

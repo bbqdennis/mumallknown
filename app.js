@@ -666,9 +666,9 @@ function resolveKey(lang, key) {
 function loadInitialLanguage() {
   try {
     const saved = localStorage.getItem(storageKey);
-    return saved && translations[saved] ? saved : 'zh';
+    return saved && translations[saved] ? saved : 'en';
   } catch (error) {
-    return 'zh';
+    return 'en';
   }
 }
 
